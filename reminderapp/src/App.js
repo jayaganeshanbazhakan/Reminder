@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
-import Route from 'react-router-dom/Route';
-import Reminder from './reminder/Reminder';
 
 class App extends Component {
-  handleChange(event) {
-	  <Router>
-	<Router path="/reminder" component={Reminder}/>
-	</Router>
-  }
+  
 
   render() {
     return (
-      <div className="login-wrap">
+      <div className="login-wrap" >
 	<div className="login-html">
-		<input id="tab-1" type="radio" name="tab" className="sign-in" checked onChange={this.handleChange}/><label htmlFor="tab-1" className="tab">Sign In</label>
+		<input id="tab-1" type="radio" name="tab" className="sign-in" checked /><label htmlFor="tab-1" className="tab">Sign In</label>
 		<input id="tab-2" type="radio" name="tab" className="sign-up"/><label htmlFor="tab-2" className="tab">Sign Up</label>
 
 	<div className="login-form">
@@ -29,7 +23,7 @@ class App extends Component {
 					<input id="pass" type="password" className="input" data-type="password"/>
 				</div>
 				<div className="group">
-					<input id="check" type="checkbox" className="check" checked onChange={this.handleChange}/>
+					<input id="check" type="checkbox" className="check" checked />
 					<label htmlFor="check"><span className="icon"></span> Keep me Signed in</label>
 				</div>
 				<div className="group">
